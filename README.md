@@ -36,7 +36,7 @@ dmarc-report-analyzer.py
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/dmarc-report-analyzer.git
+git clone https://github.com/hachiko-ops/dmarc-report-analyzer.git
 cd dmarc-report-analyzer
 ```
 
