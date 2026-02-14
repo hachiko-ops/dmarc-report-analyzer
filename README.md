@@ -1,2 +1,37 @@
-# dmarc-report-analyzer
-Python tool to extract and analyze DMARC aggregate reports
+# DMARC Report Analyzer
+
+A simple Python tool to extract, parse and analyze DMARC aggregate reports (XML, ZIP, GZ) and generate a human-readable summary of authentication failures.
+
+## 🚀 Features
+
+- Extracts `.zip` and `.gz` DMARC reports
+- Parses DMARC aggregate XML files
+- Identifies:
+  - Quarantine dispositions
+  - DKIM failures
+  - SPF failures
+- Aggregates results across multiple reports
+- Generates a plain text summary report
+
+## 📂 Project Structure
+input/archives # Place DMARC reports (.zip / .gz) here
+work/extracted # Extracted XML files
+reports/ # Generated summary report
+dmarc-report-analyzer.py
+
+## ⚙️ Requirements
+
+- Python 3.9+
+- No external dependencies (standard library only)
+
+## 🧠 How It Works
+
+1. Extract compressed DMARC reports
+2. Parse XML files
+3. Collect authentication failures
+4. Generate a daily aggregated report
+
+## ▶️ Usage
+
+```bash
+python dmarc-report-analyzer.py
