@@ -33,5 +33,25 @@ dmarc-report-analyzer.py
 
 ## ▶️ Usage
 
+1. Clone the repository:
+
 ```bash
-python dmarc-report-analyzer.py
+git clone https://github.com/yourusername/dmarc-report-analyzer.git
+cd dmarc-report-analyzer
+
+2. Create the required directories:
+input/archives
+
+3. Place your DMARC aggregate reports (.zip or .gz) inside:
+input/archives
+
+4. Run the script:
+python dmarc_report_analyzer.py
+
+The script will:
+Extract the archives
+Parse the XML reports
+Generate a summary file inside:
+reports/daily_reportYYYY-MM-DD.txt
+
+
